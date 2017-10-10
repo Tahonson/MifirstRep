@@ -1,11 +1,18 @@
 <?php
-$str = "строка текста <br>";
+$str = "как никогда раньше длинное предложение <br>";
 echo $str;
 $massive = explode (" ", $str);
-//var_dump ($massive) .PHP_EOL;
 $index =0;
-$elements = count  ($massive);
+$elements = count ($massive);
+while ($index < $elements/2) {
+    $b = $massive[$index];
+    $massive[$index] = $massive[$elements - $index - 1];
+    $massive[$elements - $index - 1] = $b;
+    echo $massive[$index] ."|" ;
+    $index++;
+}
 while ($index < $elements) {
     echo $massive[$index] ."|" ;
     $index++;
 }
+
