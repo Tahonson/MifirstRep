@@ -6,6 +6,6 @@ $massive = explode (" ", $str);
 $index =0;
 $elements = count  ($massive);
 while ($index < $elements) {
-    echo $massive ."|" ."<br>";
+    echo $massive[$index] ."|" ;
     $index++;
 }
