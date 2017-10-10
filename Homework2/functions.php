@@ -3,7 +3,7 @@
 
 function task1($string, $true)
 {
-    if ($true == true) {
+    if ($true === true) {
         echo implode(" ", $string);
         return $string;
     } else {
@@ -15,4 +15,4 @@ function task1($string, $true)
     }
 
 }
-task1("фвцзвфц вцфзщ фц вфц вфцвфцвфц вфц", 12);
+task1("В чем проблема - не знаю что с первым условием не так", 1);
