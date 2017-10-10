@@ -17,12 +17,12 @@ $opel  = array(
     "doors"=> 3,
     "year"=> 2013,
 );
-$cars = array(
-    $bmw,
-    $toyota,
-    $opel,
+$cars = Array(
+    "bmw" => $bmw,
+    "toyota" => $toyota,
+    "opel" => $opel
 );
 foreach ($cars as $key => $car) {
     echo "CAR $key<br>";
-    echo "{$car["model"]} {$car["speed"]} {$car["doors"]} {$car["year"]}";
+    echo "{$car["model"]} {$car["speed"]} {$car["doors"]} {$car["year"]}<br>";
 }
