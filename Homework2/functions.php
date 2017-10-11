@@ -15,7 +15,7 @@ function task1($string, $true)
     }
 
 }
-task1("В чем проблема - не знаю что с первым условием не так", 1);
+//task1("В чем проблема - не знаю что с первым условием не так", 1);
 
 //task2 Задание № 2
 
@@ -25,6 +25,7 @@ function tast2($array, $string) {
 //$elements = count ($array);
 //foreach ($newarray as $elem) {
     $resault =0;
+    $resault1=1;
     foreach ($array as $elem ) {
         switch ($string) {
             case '+':
@@ -46,7 +47,7 @@ function tast2($array, $string) {
     return $resault;
     echo $resault;
 }
-$rar = array(1,2,3,4,5);
+$rar = array(1,2,3,4,5,6,6,7,7,7);
 echo tast2( $rar,"+");
 
 //task3 Задание № 3
