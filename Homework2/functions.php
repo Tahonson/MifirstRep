@@ -145,4 +145,7 @@ function task7() {
     echo $string = str_replace ('Две', 'Три', $two);
 }
 echo task7();
+
 echo "<br>------------------Task8--------------- <br>";
+
+
