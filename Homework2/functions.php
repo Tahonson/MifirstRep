@@ -121,7 +121,7 @@ function task4($p1,$p2) {
 echo task4(10,"ff");
 
 echo "<br>------------------Task5--------------- <br>";
-function isPalindrome($w){
+function task5a($w){
     for($i = 0, $l = strlen($w)-1, $il = ceil($l/2); $i < $il; ++$i) {
         if($w[$i] != $w[$l-$i]) return false;
         return true;
@@ -130,15 +130,14 @@ function isPalindrome($w){
 echo "<br>------------------Task6--------------- <br>";
 
 function task6() {
-    echo date('d.m.Y H:i') ."
-";
-    echo strftime '24.02.2016 00:00:00';
+    echo date('d.m.Y H:i:s') ."<br>";
+    echo strftime ('24.02.2016 00:00:00');
 }
 echo task6();
 
 echo "<br>------------------Task7--------------- <br>";
 function task7() {
-    $one ='Карл у Клары украл Кораллы';
+    $one ='Карл у Клары украл Кораллы' ."<br>";
     echo $string= str_replace('К', '',$one) ."
 ";
     $two ='Две бутылки лимонада';
