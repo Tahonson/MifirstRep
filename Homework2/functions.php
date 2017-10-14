@@ -1,6 +1,5 @@
 <?php
 //task 1 Задание №1
-echo "<br>------------------Task1--------------- <br>";
 function task1($string, $value)
 {
     if ($value === true) {
@@ -14,11 +13,7 @@ function task1($string, $value)
 
 }
 
-//$a = array ( 1,2,3,4,5);
-//task1($a, true);
-
 //task2 Задание № 2
-echo "------------------Task2--------------- <br>";
 function task2($array, $string)
 {
     /* //работа со строкой ( введеной)//
@@ -51,12 +46,7 @@ function task2($array, $string)
     return $resault;
 }
 
-//$rar = array(1, 2, 3, 4, 5, 6, 6, 7, 7, 7);
-//echo task2($rar, "+");
-
 //task3 Задание № 3
-echo "<br>------------------Task3--------------- <br>";
-
 function task3()
 {
     $kolvo = func_num_args();
@@ -85,8 +75,6 @@ function task3()
     } else echo "Введите первым символом математическую операцию";
     return $tusk3;
 }
-
-echo "<br>------------------Task4--------------- <br>";
 
 function task4($p1, $p2)
 {
@@ -119,9 +107,6 @@ function task4($p1, $p2)
 
 }
 
-//echo task4(10, "ff");
-
-echo "<br>------------------Task5--------------- <br>";
 // не могу разобраться с этим заданием до коца, примерно что-то попытался написать, но не работает...
 function firstrs($str)
 {
@@ -150,7 +135,6 @@ function task5($str)
     } else echo 'Строка не является палиндромом';
 }
 
-echo "<br>------------------Task6--------------- <br>";
 
 function task6()
 {
@@ -158,9 +142,6 @@ function task6()
     echo strftime('24.02.2016 00:00:00');
 }
 
-//echo task6();
-
-echo "<br>------------------Task7--------------- <br>";
 function task7()
 {
     $one = 'Карл у Клары украл Кораллы' . "<br>";
@@ -169,10 +150,4 @@ function task7()
     $two = 'Две бутылки лимонада';
     echo $string = str_replace('Две', 'Три', $two);
 }
-
-//echo task7();
-
-echo "<br>------------------Task8--------------- <br>";
-echo "<br>------------------Task9--------------- <br>";
-echo "<br>------------------Task10-------------- <br>";
 
