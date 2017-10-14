@@ -158,7 +158,7 @@ function task6()
     echo strftime('24.02.2016 00:00:00');
 }
 
-echo task6();
+//echo task6();
 
 echo "<br>------------------Task7--------------- <br>";
 function task7()
@@ -170,7 +170,7 @@ function task7()
     echo $string = str_replace('Две', 'Три', $two);
 }
 
-echo task7();
+//echo task7();
 
 echo "<br>------------------Task8--------------- <br>";
 echo "<br>------------------Task9--------------- <br>";
