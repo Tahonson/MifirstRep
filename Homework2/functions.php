@@ -62,13 +62,12 @@ function task3()
             $tusk3 = $tusk3 - func_get_arg($i);
         }
     } elseif ($operator == '*') {
-        $tusk3 = 1;
-        for ($i = 1; $i <= $kolvo; $i++) {
+        $tusk3 = func_get_arg(1);
+        for ($i = 2; $i <= $kolvo; $i++) {
             $tusk3 = $tusk3 * func_get_arg($i);
         }
     } elseif ($operator == '/') {
         $tusk3 = func_get_arg(1);
-
         for ($i = 2; $i <= $kolvo; $i++) {
             $tusk3 = $tusk3 / func_get_arg($i);
         }
