@@ -1,20 +1,21 @@
 <?php
 //task 1 Задание №1
-echo "--------------Task1------------------- <br>";
-function task1($string, $true)
+echo "<br>------------------Task1--------------- <br>";
+function task1($string, $value)
 {
-    if ($true === true) {
-        $resault = implode(" ", $string);
+    if ($value === true) {
+        $resault = implode('', $string);
         return $resault;
     } else {
         foreach ($string as $str) {
-            echo "<p>" . $str . "<p>";
+            echo '<p>' . $str . '<p>';
         }
     }
 
 }
 
-task1("В чем проблема - не знаю что с первым условием не так");
+//$a = array ( 1,2,3,4,5);
+//task1($a, true);
 
 //task2 Задание № 2
 echo "------------------Task2--------------- <br>";
@@ -50,40 +51,40 @@ function task2($array, $string)
     return $resault;
 }
 
-$rar = array(1, 2, 3, 4, 5, 6, 6, 7, 7, 7);
-echo task2($rar, "+");
+//$rar = array(1, 2, 3, 4, 5, 6, 6, 7, 7, 7);
+//echo task2($rar, "+");
 
 //task3 Задание № 3
 echo "<br>------------------Task3--------------- <br>";
-function task3(...$numbers)
+
+function task3()
 {
     $kolvo = func_num_args();
     $operator = func_get_arg(0);
     if ($operator == '+') {
         $tusk3 = 0;
         for ($i = 1; $i <= $kolvo; $i++) {
-            $tusk3 = $tusk3 + $operator($i);
+            $tusk3 = $tusk3 + func_get_arg($i);
         }
     } elseif ($operator == '-') {
         $tusk3 = 0;
         for ($i = 1; $i <= $kolvo; $i++) {
-            $tusk3 = $tusk3 - $operator($i);
+            $tusk3 = $tusk3 - func_get_arg($i);
         }
     } elseif ($operator == '*') {
         $tusk3 = 1;
         for ($i = 1; $i <= $kolvo; $i++) {
-            $tusk3 = $tusk3 * $operator($i);
+            $tusk3 = $tusk3 * func_get_arg($i);
         }
     } elseif ($operator == '/') {
-        $tusk3 = 1;
-        for ($i = 1; $i <= $kolvo; $i++) {
-            $tusk3 = $tusk3 / $operator($i);
+        $tusk3 = func_get_arg(1);
+
+        for ($i = 2; $i <= $kolvo; $i++) {
+            $tusk3 = $tusk3 / func_get_arg($i);
         }
     } else echo "Введите первым символом математическую операцию";
     return $tusk3;
 }
-
-echo task3("- 1 2 3 4 5 6 ");
 
 echo "<br>------------------Task4--------------- <br>";
 
@@ -118,15 +119,35 @@ function task4($p1, $p2)
 
 }
 
-echo task4(10, "ff");
+//echo task4(10, "ff");
 
 echo "<br>------------------Task5--------------- <br>";
-function task5a($w)
+// не могу разобраться с этим заданием до коца, примерно что-то попытался написать, но не работает...
+function firstrs($str)
 {
-    for ($i = 0, $l = strlen($w) - 1, $il = ceil($l / 2); $i < $il; ++$i) {
-        if ($w[$i] != $w[$l - $i]) return false;
-        return true;
+    $str = str_replace(' ', '', mb_strtolower($str)); //находим в строке пробелы, убираем, приводим к нижнему регистру
+    $revstr = array_reverse($str);
+    $num = (count($str)) / 2;
+    $i = 0;
+    while ($str[$i] == $revstr[$i]) {
+        $i++;
+        if ($i == $num) break;
     }
+    if ($i == $num) {
+        $resault = 'true';
+        return $resault;
+    } else {
+        $resault = 'false';
+        return $resault;
+    }
+}
+
+function task5($str)
+{
+    $resault = firstrs($str);
+    if ($resault == 'true') {
+        echo 'Строка является палиндромом';
+    } else echo 'Строка не является палиндромом';
 }
 
 echo "<br>------------------Task6--------------- <br>";
@@ -152,5 +173,6 @@ function task7()
 echo task7();
 
 echo "<br>------------------Task8--------------- <br>";
-
+echo "<br>------------------Task9--------------- <br>";
+echo "<br>------------------Task10-------------- <br>";
 
