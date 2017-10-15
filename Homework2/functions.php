@@ -1,5 +1,5 @@
 <?php
-//task 1 Задание №1
+//Задание №1
 function task1($string, $value)
 {
     if ($value === true) {
@@ -13,7 +13,7 @@ function task1($string, $value)
 
 }
 
-//task2 Задание № 2
+//Задание №2
 function task2($array, $string)
 {
     /* //работа со строкой ( введеной)//
@@ -46,7 +46,7 @@ function task2($array, $string)
     return $resault;
 }
 
-//task3 Задание № 3
+//Задание №3
 function task3()
 {
     $kolvo = func_num_args();
@@ -68,13 +68,13 @@ function task3()
         }
     } elseif ($operator == '/') {
         $tusk3 = func_get_arg(1);
-        for ($i = 2; $i <= $kolvo; $i++) {
+        for ($i = 2; $i < $kolvo; $i++) {
             $tusk3 = $tusk3 / func_get_arg($i);
         }
     } else echo "Введите первым символом математическую операцию";
     return $tusk3;
 }
-
+//Задание №4
 function task4($p1, $p2)
 {
     if (is_integer($p1) and is_integer($p2)) {
@@ -106,11 +106,11 @@ function task4($p1, $p2)
 
 }
 
-// не могу разобраться с этим заданием до коца, примерно что-то попытался написать, но не работает...
+// Задание №5
 function firstrs($str)
 {
     $str = str_replace(' ', '', mb_strtolower($str)); //находим в строке пробелы, убираем, приводим к нижнему регистру
-    $revstr = array_reverse($str);
+    $revstr = strrev($str);
     $num = (count($str)) / 2;
     $i = 0;
     while ($str[$i] == $revstr[$i]) {
@@ -150,3 +150,31 @@ function task7()
     echo $string = str_replace('Две', 'Три', $two);
 }
 
+// ДОРАБОТКА
+function task8($string)
+{
+    $a = 'RX packets:950381 errors:0 dropped:0 overruns:0 frame:0';
+    $b = '|packets:([0-9]+)|';
+    $c = '|[:][)]|';
+    preg_match_all($b, $string, $output, PREG_PATTERN_ORDER);
+    foreach ($output as $entry) {
+        if ($entry > 1000) {
+            echo 'Сеть есть!';
+        } else echo 'Сети нет!';
+    }
+}
+//ДОРАБОТКА
+//принимать имя файла, открыть файл, вывести содержимое на экран;
+//создать файл anothertext.txt , добавить в него "Hello again!"
+function task9($text) {
+    if (file_exists($text)) {
+        $file = file_get_contents($text);
+        return $file;
+    } else return 'Такой файл не существует!';
+}
+function task10($text) {
+    $a = 'Hello again!';
+    $rewrite = fopen($text , 'w+');
+    fwrite($rewrite , $a );
+    fclose($rewrite);
+}
