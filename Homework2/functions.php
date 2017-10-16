@@ -74,6 +74,7 @@ function task3()
     } else echo "Введите первым символом математическую операцию";
     return $tusk3;
 }
+
 //Задание №4
 function task4($p1, $p2)
 {
@@ -139,18 +140,20 @@ function task8($string)
     }
 }
 
-//ДОРАБОТКА
-//принимать имя файла, открыть файл, вывести содержимое на экран;
-//создать файл anothertext.txt , добавить в него "Hello again!"
-function task9($text) {
+//Задание №9
+function task9($text)
+{
     if (file_exists($text)) {
         $file = file_get_contents($text);
         return $file;
     } else return 'Такой файл не существует!';
 }
-function task10($text) {
+
+//Задание №10
+function task10($text)
+{
     $a = 'Hello again!';
-    $rewrite = fopen($text , 'w+');
-    fwrite($rewrite , $a );
+    $rewrite = fopen($text, 'w+');
+    fwrite($rewrite, $a);
     fclose($rewrite);
 }
