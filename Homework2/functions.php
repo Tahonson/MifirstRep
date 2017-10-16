@@ -1,5 +1,5 @@
 <?php
-//Задание №1
+//Task №1
 function task1($string, $value)
 {
     if ($value === true) {
@@ -13,7 +13,7 @@ function task1($string, $value)
 
 }
 
-//Задание №2
+//Task №2
 function task2($array, $string)
 {
     /* //работа со строкой ( введеной)//
@@ -46,7 +46,7 @@ function task2($array, $string)
     return $resault;
 }
 
-//Задание №3
+//Task №3
 function task3()
 {
     $kolvo = func_num_args();
@@ -75,7 +75,7 @@ function task3()
     return $tusk3;
 }
 
-//Задание №4
+//Task №4
 function task4($p1, $p2)
 {
     if (is_integer($p1) and is_integer($p2)) {
@@ -107,16 +107,34 @@ function task4($p1, $p2)
 
 }
 
-// Задание №5
+//Task №5
+function utf8_strrev($str)
+{
+    preg_match_all('/./us', $str, $ar);
+    return join('', array_reverse($ar[0]));
+}
 
-//Задание №5
+function firstrs($str)
+{
+    $str = str_replace(' ', '', mb_strtolower($str)); //находим в строке пробелы, убираем, приводим к нижнему регистру
+    $revstr = utf8_strrev($str);
+    return $str === $revstr ? true:false;
+}
+
+function task5($str)
+{
+    if (firstrs($str)) {
+        echo 'Строка является палиндромом';
+    } else echo 'Строка не является палиндромом';
+}
+//Task №6
 
 function task6()
 {
     echo date('d.m.Y H:i:s') . "<br>";
     echo date_timestamp_get(new DateTime());
 }
-
+//Task №7
 function task7()
 {
     $one = 'Карл у Клары украл Кораллы' . "<br>";
