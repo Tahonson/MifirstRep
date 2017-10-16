@@ -114,7 +114,7 @@ function task4($p1, $p2)
 function task6()
 {
     echo date('d.m.Y H:i:s') . "<br>";
-    echo strftime('24.02.2016 00:00:00');
+    echo date_timestamp_get(new DateTime());
 }
 
 function task7()
@@ -129,14 +129,19 @@ function task7()
 //Task №8
 function task8($string)
 {
+    require('smile.php');
     $b = '|packets:([0-9]+)|';
-    $c = '|[:][)]|';
-    preg_match_all($b, $string, $output);
-    foreach ($output as $entry) {
-        if ($entry > 1000) {
-            echo 'Сеть есть!';
-            break;
-        } else echo 'Сети нет!';
+    $s = '|[:][)]|';
+    if (preg_match($s, $string)) {
+        smile();
+    } else {
+        preg_match_all($b, $string, $output);
+        foreach ($output as $entry) {
+            if ($entry > 1000) {
+                echo 'Сеть есть!';
+                break;
+            } else echo 'Сети нет!';
+        }
     }
 }
 
