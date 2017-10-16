@@ -107,33 +107,8 @@ function task4($p1, $p2)
 }
 
 // Задание №5
-function firstrs($str)
-{
-    $str = str_replace(' ', '', mb_strtolower($str)); //находим в строке пробелы, убираем, приводим к нижнему регистру
-    $revstr = strrev($str);
-    $num = (count($str)) / 2;
-    $i = 0;
-    while ($str[$i] == $revstr[$i]) {
-        $i++;
-        if ($i == $num) break;
-    }
-    if ($i == $num) {
-        $resault = 'true';
-        return $resault;
-    } else {
-        $resault = 'false';
-        return $resault;
-    }
-}
 
-function task5($str)
-{
-    $resault = firstrs($str);
-    if ($resault == 'true') {
-        echo 'Строка является палиндромом';
-    } else echo 'Строка не является палиндромом';
-}
-
+//Задание №5
 
 function task6()
 {
@@ -150,19 +125,20 @@ function task7()
     echo $string = str_replace('Две', 'Три', $two);
 }
 
-// ДОРАБОТКА
+//Task №8
 function task8($string)
 {
-    $a = 'RX packets:950381 errors:0 dropped:0 overruns:0 frame:0';
     $b = '|packets:([0-9]+)|';
     $c = '|[:][)]|';
-    preg_match_all($b, $string, $output, PREG_PATTERN_ORDER);
+    preg_match_all($b, $string, $output);
     foreach ($output as $entry) {
         if ($entry > 1000) {
             echo 'Сеть есть!';
+            break;
         } else echo 'Сети нет!';
     }
 }
+
 //ДОРАБОТКА
 //принимать имя файла, открыть файл, вывести содержимое на экран;
 //создать файл anothertext.txt , добавить в него "Hello again!"
