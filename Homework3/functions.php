@@ -1,5 +1,5 @@
 <?php
-//ЗАДАНИЕ №1
+//ЗАДАНИЕ №1 ===================================///
 function task1()
 {
     $file = 'data.xml';
@@ -77,7 +77,7 @@ function task2()
     );
     file_put_contents('output.json', json_encode($movies));
     $new_movies = json_decode(file_get_contents('output.json', true), true);
-    if (random_int(0, 1) === 1) {
+    if (rand(0, 1)) {
         $new_movies [0]['year'] = rand(1800, 2017);
         $new_movies [1]['year'] = rand(1800, 2017);
         $new_movies [2]['year'] = rand(1800, 2017);
@@ -86,21 +86,43 @@ function task2()
     $output1 = json_decode(file_get_contents('output.json', true), true);
 
     $output2 = json_decode(file_get_contents('output2.json', true), true);
-
+    $result = array_diff($output2, $output1);
+    echo "<br>";
+    var_dump($result);
+    // return $resault;
 }
 
-function task2_rev($movies, $new_movies)
+//ЗАДАНИЕ №3 ===================================///
+
+//Программно создайте массив, в котором перечислено не менее 50 случайных числел от 1 до 100
+//Сохраните данные в файл csv
+//Откройте файл csv и посчитайте сумму четных чисел
+function task3_1()
 {
-    $res = [];
-    foreach ($movies as $key => $value) {
-    if (is_array($new_movies) and array_key_exists($key,$new_movies)) {
-        if (is_array($value)) {
+    $numbers = [];
+    for ($i = 0; $i < 50; $i++) {
+        $numbers[] = rand(1, 100);
+    }
+    $fp = fopen('file.csv', 'w');
+    fputcsv($fp, $numbers);
+    fclose($fp);
+}
+
+function task3_2()
+{
+    if (($handle = fopen("file.csv", "r")) !== FALSE) {
+       // $rez = explode(',',$handle);
+        $text = fgetcsv($handle);
+        foreach ($text as $val) {
+            if ($val % 2 == 0) {
+                $sum += $val;
+            };
 
         }
+        echo 'Сумма четных чисел: ' .$sum;
     }
-    }
-}
 
-echo task2();
+}
+//ЗАДАНИЕ №4 ===================================///
 
 
