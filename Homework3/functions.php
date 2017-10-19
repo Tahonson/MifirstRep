@@ -1,4 +1,5 @@
 <?php
+//ЗАДАНИЕ №1
 function task1()
 {
     $file = 'data.xml';
@@ -46,11 +47,60 @@ function task1()
             number_format((float)$item->Quantity * (float)$item->USPrice, 2),
             empty($item->ShipDate) ? 'No info' : $item->ShipDate,
             empty($item->Comment) ? 'No info' : $item->Comment
-            );
+        );
     }
     $courier .= '</table>';
     echo $courier;
 
 }
 
-echo task1();
+//ЗАДАНИЕ №2 ===================================///
+
+function task2()
+{
+    $movies = array(
+        array(
+            "title" => "Rear Window",
+            "director" => "Alfred Hitchcock",
+            "year" => 1954
+        ),
+        array(
+            "title" => "Full Metal Jacket",
+            "director" => "Stanley Kubrick",
+            "year" => 1987
+        ),
+        array(
+            "title" => "Mean Streets",
+            "director" => "Martin Scorsese",
+            "year" => 1973
+        )
+    );
+    file_put_contents('output.json', json_encode($movies));
+    $new_movies = json_decode(file_get_contents('output.json', true), true);
+    if (random_int(0, 1) === 1) {
+        $new_movies [0]['year'] = rand(1800, 2017);
+        $new_movies [1]['year'] = rand(1800, 2017);
+        $new_movies [2]['year'] = rand(1800, 2017);
+    }
+    file_put_contents('output2.json', json_encode($new_movies));
+    $output1 = json_decode(file_get_contents('output.json', true), true);
+
+    $output2 = json_decode(file_get_contents('output2.json', true), true);
+
+}
+
+function task2_rev($movies, $new_movies)
+{
+    $res = [];
+    foreach ($movies as $key => $value) {
+    if (is_array($new_movies) and array_key_exists($key,$new_movies)) {
+        if (is_array($value)) {
+
+        }
+    }
+    }
+}
+
+echo task2();
+
+
