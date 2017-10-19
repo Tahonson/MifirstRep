@@ -111,7 +111,7 @@ function task3_1()
 function task3_2()
 {
     if (($handle = fopen("file.csv", "r")) !== FALSE) {
-       // $rez = explode(',',$handle);
+        // $rez = explode(',',$handle);
         $text = fgetcsv($handle);
         foreach ($text as $val) {
             if ($val % 2 == 0) {
@@ -119,10 +119,32 @@ function task3_2()
             };
 
         }
-        echo 'Сумма четных чисел: ' .$sum;
+        echo 'Сумма четных чисел: ' . $sum;
     }
 
 }
+
 //ЗАДАНИЕ №4 ===================================///
+
+//С помощью CURL запросить данные по адресу:
+//https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json
+//Вывести title и page_id
+
+function task4()
+{
+    $url = 'https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json';
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    $result = curl_exec($ch);
+    curl_close($ch);
+    $json = json_decode($result, true);
+    //var_dump($json);
+    foreach ($json[query][pages] as $value) {
+        echo " Title: $value[title] <br>";
+        echo " Page id: $value[pageid] <br>";
+    }
+
+}
 
 
