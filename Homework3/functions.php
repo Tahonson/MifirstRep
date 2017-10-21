@@ -86,10 +86,11 @@ function task2()
     $output1 = json_decode(file_get_contents('output.json', true), true);
 
     $output2 = json_decode(file_get_contents('output2.json', true), true);
-    $result = array_diff($output2, $output1);
-    echo "<br>";
-    var_dump($result);
-    // return $resault;
+   // print_r($output2);
+
+
+        echo "<br>";
+
 }
 
 //ЗАДАНИЕ №3 ===================================///
