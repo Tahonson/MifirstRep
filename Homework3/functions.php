@@ -86,12 +86,54 @@ function task2()
     $output1 = json_decode(file_get_contents('output.json', true), true);
 
     $output2 = json_decode(file_get_contents('output2.json', true), true);
-   // print_r($output2);
 
+    // дичь
+    //разбираем первый массив
+    foreach ($output1 as $key1 => $value1) {
+        if (is_array($value1)) {
 
-        echo "<br>";
+            foreach ($value1 as $key2 => $value2) ;
+
+        } else $value2 = $value1;
+        foreach ($output2 as $key3 => $value3) {
+            if (is_array($value3)) {
+                foreach ($value3 as $key4 => $value4) ;
+            } else $value4 = $value3;
+            if ($value2 !== $value4) {
+                echo "$key2 : $value2 => $key4 : $value4 <br>";
+            } else echo "Массивы одинаковые<br>";
+            break;
+        }
+    }
 
 }
+
+//    function array_diff_recursive($output1, $output2) {
+//        $diff = [];
+//        foreach ($output1 as $key => $value) {
+//            if (is_array($value)) {
+//                $tmp = array_diff_recursive($output1[$key], is_array($output2[$key]) ? $output2[$key] : [$output2[$key]]);
+//                if (!empty($tmp)) {
+//                    $diff[$key] = $tmp;
+//                }
+//            } else {
+//                if ($key > count($output2)-1) {
+//                    $diff[$key] = $value;
+//                } else {
+//                    if ($output1[$key] !== $output2[$key]) {
+//                        $diff[$key] = $output2[$key];
+//                    }
+//                }
+//            }
+//        }
+//        return $diff;
+//    }
+
+
+// дичь
+
+echo "<br>";
+
 
 //ЗАДАНИЕ №3 ===================================///
 
@@ -111,6 +153,7 @@ function task3_1()
 
 function task3_2()
 {
+    $sum = 0;
     if (($handle = fopen("file.csv", "r")) !== FALSE) {
         // $rez = explode(',',$handle);
         $text = fgetcsv($handle);
