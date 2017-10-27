@@ -184,7 +184,7 @@ function task4()
     curl_close($ch);
     $json = json_decode($result, true);
     //var_dump($json);
-    foreach ($json[query][pages] as $value) {
+    foreach ($json['query']['pages'] as $value) {
         echo " Title: $value[title] <br>";
         echo " Page id: $value[pageid] <br>";
     }
