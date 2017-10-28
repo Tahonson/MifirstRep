@@ -62,38 +62,38 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.84709066">
+    <splitter split-orientation="horizontal" split-proportion="0.58865887">
       <split-first>
         <leaf>
-          <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/register.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+                <state relative-caret-position="430">
+                  <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
                   <folding>
-                    <marker date="1509120679358" expanded="true" signature="264:300" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:301" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:302" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:308" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:310" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="347:418" ph="INSERT INTO users... " />
-                    <marker date="1509120679358" expanded="true" signature="492:506" ph="SELECT id FR... " />
-                    <marker date="1509120679358" expanded="true" signature="492:533" ph="SELECT id FR... users" />
-                    <marker date="1509120679358" expanded="true" signature="1239:1418" ph="INSERT INTO burgers... " />
-                    <marker date="1509120679358" expanded="true" signature="1250:1418" ph="Insert into burgers... " />
-                    <marker date="1509120679358" expanded="true" signature="1517:1564" ph="SELECT id fr... orders" />
-                    <marker date="1509120679358" expanded="true" signature="1710:2332" ph="..." />
-                    <marker date="1509120679358" expanded="true" signature="1722:2318" ph="..." />
+                    <marker date="1509189668767" expanded="true" signature="264:300" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:301" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:302" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:308" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:310" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="357:428" ph="INSERT INTO users... " />
+                    <marker date="1509189668767" expanded="true" signature="502:516" ph="SELECT id FR... " />
+                    <marker date="1509189668767" expanded="true" signature="502:543" ph="SELECT id FR... users" />
+                    <marker date="1509189668767" expanded="true" signature="1249:1428" ph="INSERT INTO burgers... " />
+                    <marker date="1509189668767" expanded="true" signature="1260:1428" ph="Insert into burgers... " />
+                    <marker date="1509189668767" expanded="true" signature="1527:1574" ph="SELECT id fr... orders" />
+                    <marker date="1509189668767" expanded="true" signature="1720:2342" ph="..." />
+                    <marker date="1509189668767" expanded="true" signature="1732:2328" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="359">
-                  <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+                <state relative-caret-position="308">
+                  <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
                   <folding>
                     <marker date="1509123413603" expanded="true" signature="69:88" ph="SELECT * fro... users" />
                     <marker date="1509123413603" expanded="true" signature="120:140" ph="SELECT id fr... orders" />
@@ -111,21 +111,21 @@
           <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/register.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="583">
-                  <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+                <state relative-caret-position="311">
+                  <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
                   <folding>
-                    <marker date="1509120679358" expanded="true" signature="264:300" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:301" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:302" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:308" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="264:310" ph="SELECT email... users" />
-                    <marker date="1509120679358" expanded="true" signature="347:418" ph="INSERT INTO users... " />
-                    <marker date="1509120679358" expanded="true" signature="492:533" ph="SELECT id FR... users" />
-                    <marker date="1509120679358" expanded="true" signature="1239:1418" ph="INSERT INTO burgers... " />
-                    <marker date="1509120679358" expanded="true" signature="1250:1418" ph="Insert into burgers... " />
-                    <marker date="1509120679358" expanded="true" signature="1517:1564" ph="SELECT id fr... orders" />
-                    <marker date="1509120679358" expanded="true" signature="1710:2332" ph="..." />
-                    <marker date="1509120679358" expanded="true" signature="1722:2318" ph="..." />
+                    <marker date="1509189668767" expanded="true" signature="264:300" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:301" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:302" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:308" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="264:310" ph="SELECT email... users" />
+                    <marker date="1509189668767" expanded="true" signature="357:428" ph="INSERT INTO users... " />
+                    <marker date="1509189668767" expanded="true" signature="502:543" ph="SELECT id FR... users" />
+                    <marker date="1509189668767" expanded="true" signature="1249:1428" ph="INSERT INTO burgers... " />
+                    <marker date="1509189668767" expanded="true" signature="1260:1428" ph="Insert into burgers... " />
+                    <marker date="1509189668767" expanded="true" signature="1527:1574" ph="SELECT id fr... orders" />
+                    <marker date="1509189668767" expanded="true" signature="1720:2342" ph="..." />
+                    <marker date="1509189668767" expanded="true" signature="1732:2328" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -172,8 +172,8 @@
         <option value="$PROJECT_DIR$/includes/connection.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.125/form.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DIa0.648/index.php" />
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/register.php" />
       </list>
     </option>
   </component>
@@ -332,18 +332,17 @@
       <workItem from="1508736571467" duration="3000" />
       <workItem from="1508770729420" duration="3474000" />
       <workItem from="1508785621644" duration="641000" />
-      <workItem from="1508789058695" duration="45110000" />
+      <workItem from="1508789058695" duration="45846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50259000" />
+    <option name="totallyTimeSpent" value="50995000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28598973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28598973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,19 +423,18 @@
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1509120679358" expanded="true" signature="264:300" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:301" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:302" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:308" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:310" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="347:418" ph="INSERT INTO users... " />
-            <marker date="1509120679358" expanded="true" signature="492:506" ph="SELECT id FR... " />
-            <marker date="1509120679358" expanded="true" signature="492:533" ph="SELECT id FR... users" />
-            <marker date="1509120679358" expanded="true" signature="1239:1418" ph="INSERT INTO burgers... " />
-            <marker date="1509120679358" expanded="true" signature="1250:1418" ph="Insert into burgers... " />
-            <marker date="1509120679358" expanded="true" signature="1517:1564" ph="SELECT id fr... orders" />
-            <marker date="1509120679358" expanded="true" signature="1710:2332" ph="..." />
-            <marker date="1509120679358" expanded="true" signature="1722:2318" ph="..." />
+            <marker date="1509189668767" expanded="true" signature="264:300" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:301" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:302" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:308" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:310" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="357:428" ph="INSERT INTO users... " />
+            <marker date="1509189668767" expanded="true" signature="502:543" ph="SELECT id FR... users" />
+            <marker date="1509189668767" expanded="true" signature="1249:1428" ph="INSERT INTO burgers... " />
+            <marker date="1509189668767" expanded="true" signature="1260:1428" ph="Insert into burgers... " />
+            <marker date="1509189668767" expanded="true" signature="1527:1574" ph="SELECT id fr... orders" />
+            <marker date="1509189668767" expanded="true" signature="1720:2342" ph="..." />
+            <marker date="1509189668767" expanded="true" signature="1732:2328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -507,19 +505,18 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1509120679358" expanded="true" signature="264:300" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:301" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:302" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:308" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:310" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="347:418" ph="INSERT INTO users... " />
-            <marker date="1509120679358" expanded="true" signature="492:506" ph="SELECT id FR... " />
-            <marker date="1509120679358" expanded="true" signature="492:533" ph="SELECT id FR... users" />
-            <marker date="1509120679358" expanded="true" signature="1239:1418" ph="INSERT INTO burgers... " />
-            <marker date="1509120679358" expanded="true" signature="1250:1418" ph="Insert into burgers... " />
-            <marker date="1509120679358" expanded="true" signature="1517:1564" ph="SELECT id fr... orders" />
-            <marker date="1509120679358" expanded="true" signature="1710:2332" ph="..." />
-            <marker date="1509120679358" expanded="true" signature="1722:2318" ph="..." />
+            <marker date="1509189668767" expanded="true" signature="264:300" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:301" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:302" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:308" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:310" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="357:428" ph="INSERT INTO users... " />
+            <marker date="1509189668767" expanded="true" signature="502:543" ph="SELECT id FR... users" />
+            <marker date="1509189668767" expanded="true" signature="1249:1428" ph="INSERT INTO burgers... " />
+            <marker date="1509189668767" expanded="true" signature="1260:1428" ph="Insert into burgers... " />
+            <marker date="1509189668767" expanded="true" signature="1527:1574" ph="SELECT id fr... orders" />
+            <marker date="1509189668767" expanded="true" signature="1720:2342" ph="..." />
+            <marker date="1509189668767" expanded="true" signature="1732:2328" ph="..." />
           </folding>
         </state>
       </provider>
@@ -692,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        <state relative-caret-position="308">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <marker date="1509123413603" expanded="true" signature="69:88" ph="SELECT * fro... users" />
             <marker date="1509123413603" expanded="true" signature="120:140" ph="SELECT id fr... orders" />
@@ -706,21 +703,20 @@
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
-          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <caret line="48" column="12" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding>
-            <marker date="1509120679358" expanded="true" signature="264:300" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:301" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:302" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:308" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="264:310" ph="SELECT email... users" />
-            <marker date="1509120679358" expanded="true" signature="347:418" ph="INSERT INTO users... " />
-            <marker date="1509120679358" expanded="true" signature="492:506" ph="SELECT id FR... " />
-            <marker date="1509120679358" expanded="true" signature="492:533" ph="SELECT id FR... users" />
-            <marker date="1509120679358" expanded="true" signature="1239:1418" ph="INSERT INTO burgers... " />
-            <marker date="1509120679358" expanded="true" signature="1250:1418" ph="Insert into burgers... " />
-            <marker date="1509120679358" expanded="true" signature="1517:1564" ph="SELECT id fr... orders" />
-            <marker date="1509120679358" expanded="true" signature="1710:2332" ph="..." />
-            <marker date="1509120679358" expanded="true" signature="1722:2318" ph="..." />
+            <marker date="1509189668767" expanded="true" signature="264:300" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:301" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:302" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:308" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="264:310" ph="SELECT email... users" />
+            <marker date="1509189668767" expanded="true" signature="357:428" ph="INSERT INTO users... " />
+            <marker date="1509189668767" expanded="true" signature="502:543" ph="SELECT id FR... users" />
+            <marker date="1509189668767" expanded="true" signature="1249:1428" ph="INSERT INTO burgers... " />
+            <marker date="1509189668767" expanded="true" signature="1260:1428" ph="Insert into burgers... " />
+            <marker date="1509189668767" expanded="true" signature="1527:1574" ph="SELECT id fr... orders" />
+            <marker date="1509189668767" expanded="true" signature="1720:2342" ph="..." />
+            <marker date="1509189668767" expanded="true" signature="1732:2328" ph="..." />
           </folding>
         </state>
       </provider>

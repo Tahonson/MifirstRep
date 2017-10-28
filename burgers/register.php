@@ -7,7 +7,7 @@ $phone = $con->real_escape_string($_POST['phone']);
 // проверка на существования пользователя
 
 $user_add = $con->query("SELECT email FROM users WHERE email='$email'");
-if (!$user_add) {
+if (!$user_add->num_rows) {
     $con->query("INSERT INTO users (email,name,phone) VALUES ('$email','$name','$phone')");
     $user_id = $con->insert_id;
 } else {
@@ -61,5 +61,6 @@ $order_data .= "</body></head></html>";
 $order_file = fopen('order.php', 'w+');
 
 $order_file = file_put_contents('order.php', $order_data);
+echo $order_data;
 
 
