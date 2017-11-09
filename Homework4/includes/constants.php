@@ -2,4 +2,4 @@
 define("DB_SERVER", "localhost");
 define("DB_USER", "adm");
 define("DB_PASS", "adm");
-define("DB_NAME", "vp1");
+define("DB_NAME", "task4");
