@@ -9,7 +9,7 @@ if (file_exists("photos" . "/" . $path['photo']) and $path['photo'] !== '') {
     $stmt = $con->query("UPDATE users SET photo ='' WHERE id=$get_id");
 } else {
 
-    echo "<br><a href=\"added.html\">Изображение уже было удалено. Вернуться обратно</a><br>";
+    echo "<br><a href=\"filelist.php\">Изображение уже было удалено. Вернуться обратно</a><br>";
 
 }
 

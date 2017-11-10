@@ -70,7 +70,7 @@ if (isset($_SESSION['user_id'])) {
             <th>Действия</th>
         </tr> ";
     foreach ($users as $val) {
-
+        $image = 'http://homeworkphp/MifirstRep/Homework4/photos/'.$val[6];
         $table .= "
         <tr>
             <td>$val[1]</td>

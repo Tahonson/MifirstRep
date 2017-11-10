@@ -71,7 +71,7 @@ if (isset($_SESSION['user_id'])) {
 
     foreach ($images_array as $item) {
         $image_name = $item[6];
-        $image_url = "images/" . $image_name;
+        $image_url = "http://homeworkphp/MifirstRep/Homework4/photos/" . $image_name;
         $table .= "<tr>
           <td>$image_name</td>
           <td><img src=\"$image_url\"></td>
