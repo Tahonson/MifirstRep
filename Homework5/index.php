@@ -46,12 +46,11 @@ class Car
     // функция коробки передач
 
     use Transmission_Auto;
-    public $power; //лош силы
-    public $speed; // скорость
-    public $distance; // дистанция
-    public $direction; // направление
-    public $transmission_type; // коробка
-
+    protected $power; //лош силы
+    protected $speed; // скорость
+    protected $distance; // дистанция
+    protected $direction; // направление
+    protected $transmission_type; // коробка
     //функция движения
     public function move($distance, $speed, $direction)
     {
